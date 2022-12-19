@@ -9,6 +9,7 @@ let mainWindow = null;
 
 async function createWindow() {
   mainWindow = new BrowserWindow({
+    icon: '/path/to/icon.png',
     webPreferences: {
       nodeIntegration: false,
       contextIsolation: false,

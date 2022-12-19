@@ -2,7 +2,7 @@
   "name": "play-pure",
   "productName": "play-pure",
   "version": "1.0.0",
-  "description": "My Electron application description",
+  "description": "AdBlocked Youtube app",
   "main": "src/index.js",
   "scripts": {
     "start": "electron-forge start",
