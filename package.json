@@ -1,6 +1,6 @@
 {
   "name": "play-pure",
-  "productName": "play-pure",
+  "productName": "Play Pure",
   "version": "1.0.0",
   "description": "AdBlocked Youtube app",
   "main": "src/index.js",
@@ -11,12 +11,14 @@
     "publish": "electron-forge publish",
     "lint": "echo \"No linting configured\""
   },
+ 
   "keywords": [],
   "author": "surya",
   "license": "MIT",
   "dependencies": {
     "@cliqz/adblocker-electron": "^1.25.1",
     "cross-fetch": "^3.1.5",
+    "electron-builder": "^23.6.0",
     "electron-squirrel-startup": "^1.0.0"
   },
   "devDependencies": {

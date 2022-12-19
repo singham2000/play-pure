@@ -1,4 +1,4 @@
-const { app, BrowserWindow } = require('electron');
+const { app, BrowserWindow, Menu } = require('electron');
 const { fetch } = require('cross-fetch');
 const { readFileSync, writeFileSync } = require('fs');
 
@@ -9,7 +9,7 @@ let mainWindow = null;
 
 async function createWindow() {
   mainWindow = new BrowserWindow({
-    icon: '/path/to/icon.png',
+    icon: 'src/yy.ico',
     webPreferences: {
       nodeIntegration: false,
       contextIsolation: false,
@@ -64,6 +64,22 @@ async function createWindow() {
     mainWindow = null;
   });
 }
+
+var menu = Menu.buildFromTemplate([
+  {
+    label: 'Menu',
+    submenu: [
+
+      {
+        label: 'Exit',
+        click() {
+          app.quit()
+        }
+      }
+    ]
+  }
+])
+Menu.setApplicationMenu(menu);
 
 app.on('ready', createWindow);
 
